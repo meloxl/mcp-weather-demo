@@ -91,4 +91,6 @@ async def get_forecast(latitude: float, longitude: float) -> str:
 
 if __name__ == "__main__":
     # 初始化并运行 server
-    mcp.run(transport='stdio')
+    # mcp.run(transport='stdio')
+    # 改成sse模式
+    mcp.run(transport='sse')
